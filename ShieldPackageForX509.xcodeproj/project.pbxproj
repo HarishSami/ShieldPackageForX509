@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E12009F52BA81A2F00277E03 /* applepush.txt in Resources */ = {isa = PBXBuildFile; fileRef = E12009F42BA81A2F00277E03 /* applepush.txt */; };
 		E17038BC2B9983EB005C8030 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17038BB2B9983EB005C8030 /* AppDelegate.swift */; };
 		E17038BE2B9983EB005C8030 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17038BD2B9983EB005C8030 /* SceneDelegate.swift */; };
 		E17038C02B9983EB005C8030 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17038BF2B9983EB005C8030 /* ViewController.swift */; };
@@ -16,6 +17,10 @@
 		E17038D32B9983ED005C8030 /* ShieldPackageForX509Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17038D22B9983ED005C8030 /* ShieldPackageForX509Tests.swift */; };
 		E17038DD2B9983ED005C8030 /* ShieldPackageForX509UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17038DC2B9983ED005C8030 /* ShieldPackageForX509UITests.swift */; };
 		E17038DF2B9983ED005C8030 /* ShieldPackageForX509UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17038DE2B9983ED005C8030 /* ShieldPackageForX509UITestsLaunchTests.swift */; };
+		E17038ED2B998492005C8030 /* Shield in Frameworks */ = {isa = PBXBuildFile; productRef = E17038EC2B998492005C8030 /* Shield */; };
+		E17038F02B998666005C8030 /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E17038EF2B998666005C8030 /* CryptoSwift */; };
+		E17038F32B99A095005C8030 /* X509 in Frameworks */ = {isa = PBXBuildFile; productRef = E17038F22B99A095005C8030 /* X509 */; };
+		E17E22512B9AEA540040FCDB /* OpenSSL in Frameworks */ = {isa = PBXBuildFile; productRef = E17E22502B9AEA540040FCDB /* OpenSSL */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E12009F42BA81A2F00277E03 /* applepush.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = applepush.txt; sourceTree = "<group>"; };
 		E17038B82B9983EB005C8030 /* ShieldPackageForX509.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShieldPackageForX509.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E17038BB2B9983EB005C8030 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E17038BD2B9983EB005C8030 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +62,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E17038ED2B998492005C8030 /* Shield in Frameworks */,
+				E17038F02B998666005C8030 /* CryptoSwift in Frameworks */,
+				E17038F32B99A095005C8030 /* X509 in Frameworks */,
+				E17E22512B9AEA540040FCDB /* OpenSSL in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +112,7 @@
 				E17038BB2B9983EB005C8030 /* AppDelegate.swift */,
 				E17038BD2B9983EB005C8030 /* SceneDelegate.swift */,
 				E17038BF2B9983EB005C8030 /* ViewController.swift */,
+				E12009F42BA81A2F00277E03 /* applepush.txt */,
 				E17038C12B9983EB005C8030 /* Main.storyboard */,
 				E17038C42B9983ED005C8030 /* Assets.xcassets */,
 				E17038C62B9983ED005C8030 /* LaunchScreen.storyboard */,
@@ -143,6 +154,12 @@
 			dependencies = (
 			);
 			name = ShieldPackageForX509;
+			packageProductDependencies = (
+				E17038EC2B998492005C8030 /* Shield */,
+				E17038EF2B998666005C8030 /* CryptoSwift */,
+				E17038F22B99A095005C8030 /* X509 */,
+				E17E22502B9AEA540040FCDB /* OpenSSL */,
+			);
 			productName = ShieldPackageForX509;
 			productReference = E17038B82B9983EB005C8030 /* ShieldPackageForX509.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +232,12 @@
 				Base,
 			);
 			mainGroup = E17038AF2B9983EB005C8030;
+			packageReferences = (
+				E17038EB2B998491005C8030 /* XCRemoteSwiftPackageReference "Shield" */,
+				E17038EE2B998666005C8030 /* XCRemoteSwiftPackageReference "CryptoSwift" */,
+				E17038F12B99A095005C8030 /* XCRemoteSwiftPackageReference "swift-certificates" */,
+				E17E224F2B9AEA540040FCDB /* XCRemoteSwiftPackageReference "OpenSSL" */,
+			);
 			productRefGroup = E17038B92B9983EB005C8030 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E17038C82B9983ED005C8030 /* LaunchScreen.storyboard in Resources */,
+				E12009F52BA81A2F00277E03 /* applepush.txt in Resources */,
 				E17038C52B9983ED005C8030 /* Assets.xcassets in Resources */,
 				E17038C32B9983EB005C8030 /* Main.storyboard in Resources */,
 			);
@@ -450,6 +474,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -478,6 +503,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -607,6 +633,64 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E17038EB2B998491005C8030 /* XCRemoteSwiftPackageReference "Shield" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/outfoxx/Shield";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.5.0;
+			};
+		};
+		E17038EE2B998666005C8030 /* XCRemoteSwiftPackageReference "CryptoSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzyzanowskim/CryptoSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.8.1;
+			};
+		};
+		E17038F12B99A095005C8030 /* XCRemoteSwiftPackageReference "swift-certificates" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-certificates.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+		E17E224F2B9AEA540040FCDB /* XCRemoteSwiftPackageReference "OpenSSL" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzyzanowskim/OpenSSL.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.4000;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E17038EC2B998492005C8030 /* Shield */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E17038EB2B998491005C8030 /* XCRemoteSwiftPackageReference "Shield" */;
+			productName = Shield;
+		};
+		E17038EF2B998666005C8030 /* CryptoSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E17038EE2B998666005C8030 /* XCRemoteSwiftPackageReference "CryptoSwift" */;
+			productName = CryptoSwift;
+		};
+		E17038F22B99A095005C8030 /* X509 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E17038F12B99A095005C8030 /* XCRemoteSwiftPackageReference "swift-certificates" */;
+			productName = X509;
+		};
+		E17E22502B9AEA540040FCDB /* OpenSSL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E17E224F2B9AEA540040FCDB /* XCRemoteSwiftPackageReference "OpenSSL" */;
+			productName = OpenSSL;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E17038B02B9983EB005C8030 /* Project object */;
 }
